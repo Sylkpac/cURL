@@ -7,7 +7,7 @@ This guide covers the basics of cURL and explores some common use cases. By the 
   
 ### What is cURL?
 
-cURL is a powerful command-line tool that lets you interact with websites and servers. Whether you need to download files, make API calls, or simply explore the web, cURL provides a flexible and efficient way to do it. Today, we'll delve into the world of HTTP requests.
+cURL is a powerful command-line tool that lets you interact with websites and servers. Whether you need to download files, make API calls, or simply explore the web, cURL provides a flexible and efficient way to do it. Today, we'll dive into the world of HTTP requests.
 
 ### Understanding HTTP Requests
 
@@ -46,21 +46,22 @@ This saves the webpage's HTML code as example.html which you can then open in a 
 ### Finding and Opening the Saved File with Nano
 
 * **Check the Current Directory:** Open your terminal and use the pwd command to see your current working directory where the file was saved.
-* **Locate the File:** Use the ls command to list files in the current directory. Look for the filename you specified with -o.
+* **Locate the File:** Use the _**ls**_ command to list files in the current directory. Look for the filename you specified with -o.
 * **Open with Nano:** Once you've found the file, use:  
-_**nano filename.html**_
+_**nano filename.html**_  
 Replace _filename.html_ with the actual name.
 
 ### Example:
-If you saved the file as _example.txt_ and you're currently in the Documents directory, you would use:
-_**cd Documents**_  
+If you saved the file as _example.txt_ and you're currently in the Documents directory, you would use:  
+_**cd Documents**_    
 _**nano example.txt**_
 
 ### Analyzing HTTP Response Headers:
 
 When you make a request, the server responds with data and additional information called HTTP headers. These headers provide details like the content type (e.g., HTML, image) and the status code.
-To view only the headers, use the _-I_ flag:  
-_**curl -I https://example.com**_    
+To view only the headers, use the _**-I**_ flag:  
+_**curl -I https://example.com**_  
+
 This displays the HTTP headers without the actual content. Look for common headers like:
 
 * **Content-Type:** Indicates the type of data being returned (e.g., text/html, image/jpeg).
@@ -68,7 +69,7 @@ This displays the HTTP headers without the actual content. Look for common heade
 * **Server:** The name of the web server software used.
 * **Content-Length:** The size of the data being transferred.
 
-###Understanding HTTP Status Codes:
+### Understanding HTTP Status Codes:
 
 Knowing HTTP status codes is crucial for troubleshooting web interactions. Here are some common codes and their meanings:  
 
